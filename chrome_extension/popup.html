@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube RAG</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">✦</div>
+
+        <div>
+            <h1>YouTube RAG</h1>
+            <p>Ask anything about this video</p>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="video-box">
+        <span class="youtube-icon">▶</span>
+        <div>
+            <span class="video-label">CURRENT VIDEO</span>
+            <div id="videoTitle">Detecting YouTube video...</div>
+        </div>
+    </div>
+
+    <!-- Chat area -->
+    <div id="chatContainer" class="chat-container">
+
+        <div class="message assistant">
+            <div class="avatar">✦</div>
+            <div class="bubble">
+                Hi! 👋<br>
+                Ask me anything about this YouTube video.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Input -->
+    <div class="input-area">
+
+        <textarea
+            id="question"
+            placeholder="Ask about this video..."
+            rows="1"
+        ></textarea>
+
+        <button id="askButton">
+            <span id="buttonText">Ask</span>
+            <span id="loading" class="loading hidden">●●●</span>
+        </button>
+
+    </div>
+
+    <div id="status"></div>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
